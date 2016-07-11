@@ -30,3 +30,21 @@ nav ul {
   text-align: center;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+
+
+}
+.hero {
+  background: url(http://www.elevationacademy.co/wp-content/uploads/2016/02/Tel-Aviv.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 700px;
+  margin-top: 50px;
+  overflow: hidden;
+
+
+
+}
