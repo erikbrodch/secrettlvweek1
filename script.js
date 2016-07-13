@@ -1,7 +1,14 @@
-$(document).on('click', 'a', function(event){
-    event.preventDefault();
+$(document).ready(function(){
+	$('a[href^="#food"]').on('click',function (e) {
+	    e.preventDefault();
 
-    $("#food").animate({
-        scrollTop: $( $.food(this, 'href') ).offset().top
-    }, 500);
-}); 
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
